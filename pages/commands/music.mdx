@@ -1,0 +1,172 @@
+import Callout from "nextra-theme-docs/callout";
+import Command from "../../components/features.js";
+
+
+# Music
+
+<Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
+    You should replace `£` with the current prefix you have set.
+    More information on how to change the prefix here.
+</Callout>
+
+## back
+Goes back to the previous track.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £back { number of track }
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£back
+£back 4
+```
+
+## loop
+The current track will repeat itself indefinitely
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £loop
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£loop
+```
+
+## lyric
+Skips the media currently playing. Ignores the repetition of the track
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £lyric { Sentence }
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£lyric
+£lyric memento
+£lyric memento, nonoc
+```
+
+## nowplaying
+Show information about the current track
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £nowplaying
+Aliases : £np
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£nowplaying
+```
+
+## pause
+Pause or resume playback
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £pause
+Aliases : £resume
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£pause
+```
+
+## play
+If you are in a vocal channel, call Luna to play music from a supported url ( Youtube, Soundcloud, Spotify ).
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £play [ URL | Sentence ]
+Aliases : £p
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£play https://www.youtube.com/watch?v=5qap5aO4i9A
+£play https://soundcloud.com/lofi_girl/4-am-studysession
+£play https://open.spotify.com/playlist/59LUwJVpBHWjxyKDDuz4Ld?si=7014a5f815614ddb
+£play Lofi mix
+
+```
+## queue
+Indicates the content of the queue
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £queue
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£queue
+```
+
+## shuffle
+Randomly shuffle the playlist.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £shuffle
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£shuffle
+```
+
+## skip
+Skips the media currently playing. Ignores the repetition of the track
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £skip { number of track }
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£skip
+£skip 4
+```
+
+
+## stop
+Clear the playlist and disconnect Luna
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £stop
+Aliases : £leave
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£stop
+```

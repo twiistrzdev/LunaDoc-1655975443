@@ -1,0 +1,6 @@
+{
+    "prerequisite"  : "Prerequisite",
+    "windows"       : "Installing on Windows",
+    "mac"           : "Installing on MacOS",
+    "general"       : "General"
+}

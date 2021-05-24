@@ -1,0 +1,66 @@
+import Callout from "nextra-theme-docs/callout"
+
+## Edit the configuration
+At the root of the project, you will find a file named `sample-config.js`,
+you will have to rename it to `config.js`, and then fill it according to the indicated model.
+
+```json
+module.exports = {
+
+// —— Basic configuration information, essential.
+
+    // — The bot's token found in the Discord developer portal — in the 'bot' section, under the name.
+    Token: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+
+    /* — Your User ID ( Go to the settings of your discord, in the 'Advanced'
+         section, then enable 'Developer mode' ) Right click on your profile and 'Copy ID'. */
+	Master: "000000000000000000",
+
+    // — The secret client for interaction with the Discord API, also found on Discord developers portal, in the 'OAuth2' section, in 'Client information'.
+    Secret: "C387_Bp7LZKwQoAMmyUb3t4DjSnpg9DK",
+
+    // — URL of your MongoDB database ( see the appropriate section for more details )
+    mongodb: "mongodb://xxxxxxxxxxxxxxxxx...",
+
+// —— Activity configuration
+
+    Presence: {
+		status: "Online",
+        // —— You can add unlimited number of games, or none in fact, just leave it like this: games: []
+		games: [{
+            // — 'type' can be PLAYING STREAMING LISTENING WATCHING COMPETING, you need to provide Twitch URL for STREAMING
+		    type: "WATCHING",
+		    name: "You",
+		    url: ""
+		}, {
+            type: "PLAYING",
+		    name: "A cool game",
+		    url: ""
+        }],
+
+        // — Status will change every 15 seconds
+		interval: 15
+	},
+
+}
+```
+
+## Installation of MongoDB
+MongoDB, like all other databases, is available in several variants depending
+on the development needs. The variants have been listed below and can be
+used or downloaded from this [link](https://www.mongodb.com/try)
+
+You can choose between the cloud and "local".
+
+<Callout emoji="💾" >
+    For a local installation, more complex, I advise you to follow the steps described in the [guide](https://docs.mongodb.com/manual/installation/) of the official site
+</Callout>
+
+#### For Cloud ( Atlas ) Solution :
+
+1. Once you have created an account navigate to the cluster page and create a free cluster.
+2. Next wait for the changes to be deployed ( this could take upto 5 minutes ), click the connect button.
+3. Select the Allow Access from Anywhere button and then Add Ip Address.
+4. Create a `dbUser` and `dbUserPassword` and hold onto this for later.
+5. Navigate to `Choose a connection method`, click `Connect your application` and copy the provided link.
+6. Navigate to config.js in your bot and replace the `mongodb://xxxxxxxxxxxxxxxxx` the bottom with the link you have copied. Make sure to replace `<password>` with the password you created.

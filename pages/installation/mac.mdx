@@ -1,0 +1,52 @@
+import Callout from "nextra-theme-docs/callout"
+
+# Installing Luna on MacOS
+
+## Prerequisite
+Please install the prerequisites by following the instructions in one of the following subsections :
+
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Node.js 12.0.0 or newer](https://nodejs.org/en/)
+- [Python 2.7](https://www.python.org/downloads/release/python-270/)
+- <details>
+    <summary style={{ display: 'inline' }}>
+        Xcode Command Line Tools ( click for information )
+    </summary>
+
+    Type the command `xcode-select --install`
+
+    ![powershellAdmin](/installation/mac/xcode-selectInstall.png)
+
+    Click “Install” to download and install Xcode Command Line Tools.
+
+    The instructions in the alert box are confusing. You don’t need to "Get Xcode" from the App Store. Just click "Install" for the Xcode Command Line Tools. If you have a slow Internet connection, it may take many minutes.
+
+    If the download takes a very long time (over an hour) or fails, you can try an alternative. Go to https://developer.apple.com/downloads/more and enter your Apple ID and password. You'll be asked to agree to the terms of the Apple Developer Program. You'll see a list of software packages you can download. Look for the latest version of Command Line Tools and click to download the .dmg file. Downloading the .dmg file is much faster than waiting for the command-line-based download. Install the .dmg file by clicking on the package icon.
+</details>
+
+## Installation
+
+
+Open a terminal, and navigate to the location where you want to install Luna, then type:
+
+```bash
+git clone https://github.com/Asgarrrr/Luna
+```
+
+Once the clone is done, you have the project as it is on [Github](https://github.com/Asgarrrr/Luna),
+then type these two commands, the first one will make you enter the folder, and the second one will install
+the dependencies needed to run Luna
+
+```bash
+cd Luna
+```
+
+```bash
+npm install --production
+```
+
+<Callout emoji="🔥">
+  **It's done** ! If you haven't encountered any errors, you can go to the [General](./general) section !
+  If problems occur, and you can't find a solution, you can create a [new issue](https://github.com/Asgarrrr/Luna/issues)
+</Callout>
+
