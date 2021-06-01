@@ -1,6 +1,71 @@
+import Callout from "nextra-theme-docs/callout";
+import Command from "../../components/features.js"
+
 # Administration
 Administration commands can only be used by users with administrative privileges.
 
-## Ban
-Ban a user
+<Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
+    You should replace `£` with the current prefix you have set.
+    More information on how to change the prefix here.
+</Callout>
 
+## addrole
+Lets you assign a role to a member.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £addrole { user mention / user ID } { role mention / role ID }
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£addrole
+£addrole @asgarrrr @moderator
+```
+
+## autorole
+Defines the roles assigned automatically when a new member joins.
+
+```
+Usage   : £autorole [operation] [role]
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£autorole on
+£autorole add @moderator
+£autorole remove @moderataor
+£autorole v
+£autorole off
+```
+
+## language
+Change the language used by Luna in the guild.
+
+```
+Usage   : £language [language]
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£language FR
+£language EN
+```
+
+## prefix
+Change the prefix used by Luna in the guild.
+
+```
+Usage   : £prefix [prefix]
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£prefix _
+£prefix !
+```
