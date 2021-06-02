@@ -1,0 +1,38 @@
+import Callout from "nextra-theme-docs/callout";
+import Command from "../../components/features.js"
+
+# General
+
+<Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
+    You should replace `£` with the current prefix you have set.
+    More information on how to change the prefix here.
+</Callout>
+
+## avatar
+Returns the profile image of a player. Targeting by mention, username, or ID.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £avatar {@mention || username || ID}
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£avatar 662331369392832512
+£avatar @Luna
+£avatar Luna
+```
+
+## ping
+Send test packets to the bot, and measures the response time, also, display information from the statuspage api about server & service states.
+
+```
+Usage   : £ping
+```
+
+### How to use the command
+```
+£ping
+```
