@@ -1,0 +1,43 @@
+import Callout from "nextra-theme-docs/callout";
+import Command from "../../components/features.js"
+
+# Moderation
+
+<Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
+    You should replace `£` with the current prefix you have set.
+    More information on how to change the prefix here.
+</Callout>
+
+## ban
+Ban a user.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £ban [@mention] {reason}
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£ban @Asgarrrr
+£ban Luna
+```
+
+## prune
+Delete a quantity of messages in a channel sent by a member, all members with a role, bots, pinned messages, files or only yours.
+
+<small>This command can only be executed on a server.</small>
+
+```
+Usage   : £prune prune { number } [ @user | @role | Keyword ( me | bots | uploads | pins) ]
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### How to use the command
+```
+£prune 100 @Asgarrrr
+£prune 50 @moderator
+£prune 10
+£prune 100 bots
+```
