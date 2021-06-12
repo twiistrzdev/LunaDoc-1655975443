@@ -2,3 +2,102 @@ import Callout from "nextra-theme-docs/callout";
 import Command from "../../components/features.js"
 
 # Fun
+
+<Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
+    You should replace `£` with the current prefix you have set.
+    More information on how to change the prefix here.
+</Callout>
+
+## Game
+### power4
+Start a Power 4 game.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£power4 [ user ]
+
+How to use the command
+£power4 @Asgarrrr
+£power4 @Twiistrz
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### tictactoe
+Starts a game of tic tac toe with another member.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£tictactoe [ user ] { grid size ( between 3 and 5 ) }
+
+How to use the command
+£tictactoe @Asgarrrr 4
+£tictactoe @Twiistrz 5
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+## Levels
+### level
+Operation on the exeriences of a member.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£level [ user ] [ operation ] [ quantity ]
+
+How to use the command
+£level @Asgarrrr + 100
+£level all = 2
+£level @role / 2
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### rank
+Generates a custom card with progress, rank and biography.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£rank { user }
+
+How to use the command
+£rank
+£rank @Asgarrrr
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### ranking
+Displays the top 10 ranking of the server members.
+
+```
+£ranking
+```
+
+### setbackground
+Defines your profile background on a server.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£setbackground { user }
+
+How to use the command
+£setbg [ image url ] { x position } { y position }
+£setbackground [ image url ] { x position } { y position }
+£setbackground [ file attachment ]
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
+### setbio
+Defines your profile phrase on a server.
+
+<small>This command can only be executed on a server.</small>
+
+```
+£setbio { message }
+
+How to use the command
+£setbio Hello this is my bio!
+```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
