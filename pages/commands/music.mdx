@@ -1,7 +1,6 @@
 import Callout from "nextra-theme-docs/callout";
 import Command from "../../components/features.js";
 
-
 # Music
 
 <Callout emoji="ℹ️" background = 'bg-blue-100 dark:text-gray-800'>
@@ -15,15 +14,13 @@ Goes back to the previous track.
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £back { number of track }
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+£back { number of track }
 
-### How to use the command
-```
+How to use the command
 £back
 £back 4
 ```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
 
 ## loop
 The current track will repeat itself indefinitely
@@ -31,62 +28,25 @@ The current track will repeat itself indefinitely
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £loop
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
 £loop
 ```
 
-## lyric
-Skips the media currently playing. Ignores the repetition of the track
-
-<small>This command can only be executed on a server.</small>
-
-```
-Usage   : £lyric { Sentence }
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
-£lyric
-£lyric memento
-£lyric memento, nonoc
-```
-
 ## nowplaying
-Show information about the current track
+Show information about the current track.
 
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £nowplaying
-Aliases : £np
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
-£nowplaying
+£nowplaying | £np
 ```
 
-## pause
+## pause and resume
 Pause or resume playback
 
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £pause
-Aliases : £resume
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
-£pause
+£pause | £resume
 ```
 
 ## play
@@ -95,30 +55,21 @@ If you are in a vocal channel, call Luna to play music from a supported url ( Yo
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £play [ URL | Sentence ]
-Aliases : £p
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+£play [ URL | song ]
 
-### How to use the command
-```
+How to use the command
 £play https://www.youtube.com/watch?v=5qap5aO4i9A
 £play https://soundcloud.com/lofi_girl/4-am-studysession
 £play https://open.spotify.com/playlist/59LUwJVpBHWjxyKDDuz4Ld?si=7014a5f815614ddb
 £play Lofi mix
-
 ```
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+
 ## queue
 Indicates the content of the queue
 
 <small>This command can only be executed on a server.</small>
 
-```
-Usage   : £queue
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
 ```
 £queue
 ```
@@ -129,12 +80,6 @@ Randomly shuffle the playlist.
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £shuffle
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
 £shuffle
 ```
 
@@ -144,16 +89,13 @@ Skips the media currently playing. Ignores the repetition of the track
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £skip { number of track }
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
+£skip { number of track }
 
-### How to use the command
-```
+How to use the command
 £skip
 £skip 4
 ```
-
+<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
 
 ## stop
 Clear the playlist and disconnect Luna
@@ -161,12 +103,5 @@ Clear the playlist and disconnect Luna
 <small>This command can only be executed on a server.</small>
 
 ```
-Usage   : £stop
-Aliases : £leave
-```
-<small style={{ position: 'relative', top: '-15px' }}>`[]` = Required arguments, — `{}` = Optional arguments.</small>
-
-### How to use the command
-```
-£stop
+£stop |£leave
 ```
