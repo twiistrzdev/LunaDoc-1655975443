@@ -20,11 +20,11 @@ export default {
       <meta name="description" content="Luna — An adorable Discord bot" />
       <meta name="og:description" content="Luna — An adorable Discord bot" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="twitter:image" content="./Luna.png" />
       <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
+      <meta name="twitter:url" content="./Luna.png" />
       <meta name="og:title" content="Luna — An adorable Discord bot" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="og:image" content="./Luna.png" />
       <meta name="apple-mobile-web-app-title" content="Luna" />
       <link
         rel="apple-touch-icon"
